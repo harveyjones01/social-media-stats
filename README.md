@@ -1,13 +1,3 @@
-# social-media-stats
-I want to build an app that is able to track the statistics of your social media account
+# about this repo
 
-done:
-instagram
-twitter
-
-to do:
-snapchat
-facebook
-linkedin
-reddit
-
+These are mini projects that i have made using python over the last 4 years that i have been using it.

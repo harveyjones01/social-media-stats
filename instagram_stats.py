@@ -4,7 +4,6 @@ import urllib.request
 import urllib.parse
 import re
 
-
 def instagram_stats(instagram_handle):
     x = urllib.request.urlopen('https://www.instagram.com/' + instagram_handle + '/') #saves the raw html page to the variable
     html = x.read()
@@ -18,22 +17,11 @@ def instagram_stats(instagram_handle):
     posts_2 = str(posts[0])
     return followers_2, following_2, posts_2
     
-
-
-
-
-
-
-
 try:
     instagram_handle = input('instagram name --->')
     followers_2, following_2, posts_2 = instagram_stats(instagram_handle)
     print('followers =',followers_2, ',', 'following =', following_2, ',','posts =',posts_2)
         
-        
-
-    
-  
 except Exception as e:
     print(e)
     print('this is not a valid instagram handle')
